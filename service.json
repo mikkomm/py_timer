@@ -1,0 +1,10 @@
+{
+	"services": [
+		{
+			"name": "Diaspora database backup",
+			"executable": "/backup/backup_db.sh",
+			"weekday": ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"],
+			"time": ["21:15"]
+		}
+	]
+}
