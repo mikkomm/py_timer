@@ -19,7 +19,7 @@ def main(argv=None):
 
 		for service in data['services']:
 			if str(time.strftime("%A", startLocalTime)).lower() in str(service['weekday']).lower():				
-				if str(time.strftime("%H:%M", startLocalTime)) in str(service['time']).lower():
+				if str(time.strftime("%H:%M", startLocalTime)) in str(service['time']):
 					if 'last_execution' not in service or str(service['last_execution']) != str(time.strftime("%d-%m %H:%M", startLocalTime)):
 						
 						try:
