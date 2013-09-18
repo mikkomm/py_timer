@@ -8,8 +8,8 @@ def main(argv=None):
 
 	# Read json
 	jsonFile = str(argv[0])
-	json_data = open(jsonFile).read()
-	data = json.loads(json_data)
+	jsonData = open(jsonFile).read()
+	data = json.loads(jsonData)
 			
 	# Infinite loop, escape with CTRL+C
 	while True:
